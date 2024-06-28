@@ -1,0 +1,64 @@
+
+/* body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f7fafc;
+  }
+  
+  .text-gray-900 {
+    color: #1a202c;
+  }
+  
+  .text-gray-700 {
+    color: #4a5568;
+  }
+  
+  .bg-white {
+    background-color: #fff;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+   */
+/* 
+   @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.portfolio {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    color: white;
+    border-right: 0.1em solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; 
+    animation: 
+        typing 4s steps(30, end) forwards,
+        blink-caret 0.75s step-end infinite;
+} */

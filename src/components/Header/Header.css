@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Julee&display=swap');
+
+.navLinks{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* .btnChange:hover{
+    background-image: url(../../assets/btn1.png);
+    background-color: yellow;
+    background-size: cover ;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+} */
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+
+.portfolio:hover {
+    font-family: "lindsey-signature", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3.5rem;
+    /* color: yellow; */
+    /* border-right: 0.1em solid rgb(238, 208, 16); */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; 
+    animation: 
+        typing 9s steps(30, end) forwards,
+        blink-caret 1s step-end infinite;
+}

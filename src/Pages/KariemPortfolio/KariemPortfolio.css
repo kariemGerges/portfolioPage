@@ -1,0 +1,100 @@
+/* Default styles for desktop and larger screens */
+.justNo-background {
+    background-color: black;
+    opacity: 0.8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.helloworld, .kariemGerges, .Ibuild, .Iam {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.kariemGerges {
+    font-size: 2rem;
+    color: white;
+}
+
+.text-white {
+    color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    .kariemGerges {
+        font-size: 1.8rem;
+    }
+    .container {
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .kariemGerges {
+        font-size: 1.6rem;
+    }
+    .container {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .kariemGerges {
+        font-size: 1.4rem;
+    }
+    .container {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    .helloworld, .Ibuild, .Iam {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .kariemGerges {
+        font-size: 1.2rem;
+    }
+    .helloworld, .Ibuild, .Iam {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+/* ============================================================================== */
+
+/* @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+
+
+.portfolio {
+    font-family: "lindsey-signature", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15rem;
+    color: white;
+    border-right: 0.1em solid rgb(238, 208, 16);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; 
+    animation: 
+        typing 5s steps(30, end) forwards,
+        blink-caret 0.75s step-end infinite;
+} */
+
+
+

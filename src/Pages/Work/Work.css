@@ -1,0 +1,9 @@
+
+
+/* Small devices (phones, 767px and down)  */
+@media (max-width: 767px) {
+    .grid {
+        grid-template-columns: 1fr;
+      }
+    
+}

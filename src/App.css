@@ -1,0 +1,152 @@
+/* /* .App {
+  text-align: center;
+} */
+
+
+/* body{
+  background-image: url('./assets/mainBG.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+} */
+
+.justNo-background {
+  background-image: none;
+  
+}
+
+/* .no-background {
+  background-image: none;
+  background-color: #072CB0;
+} */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* Media Queries for Responsiveness */
+
+/* Large devices (desktops, 1200px and up) */
+/* @media (min-width: 1200px) { */
+  .helloworld {
+      font-size: 2rem;
+      margin-top: 10%;
+      margin-left: 8%;
+      margin-right: 20%;
+  }
+
+  .kariemGerges {
+      font-size: 5rem;
+      margin-left: 8%;
+      margin-right: 20%;
+  }
+
+  .Ibuild {
+      font-size: 2.5rem;
+      margin-left: 8%;
+      margin-right: 20%;
+  }
+
+  .Iam {
+      font-size: 1rem;
+      margin-left: 8%;
+      margin-right: 20%;
+  }
+/* } */
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  .helloworld {
+      font-size: 1.5rem;
+      margin-top: 10%;
+      margin-left: 5%;
+      margin-right: 10%;
+  }
+
+  .kariemGerges {
+      font-size: 4rem;
+      margin-left: 5%;
+      margin-right: 10%;
+  }
+
+  .Ibuild {
+      font-size: 2rem;
+      margin-left: 5%;
+      margin-right: 10%;
+  }
+
+  .Iam {
+      font-size: 1rem;
+      margin-left: 5%;
+      margin-right: 10%;
+  }
+} */
+
+/* Small devices (phones, 767px and down) */
+/* @media (max-width: 767px) {
+
+  body{
+    background-image: none;
+    background-color: #0527A3;
+  }
+
+
+  .helloworld {
+      font-size: 1rem;
+      margin-top: 20%;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+
+  .kariemGerges {
+      font-size: 3rem;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+
+  .Ibuild {
+      font-size: 1.5rem;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+
+  .Iam {
+      font-size: 1rem;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+}
+ */

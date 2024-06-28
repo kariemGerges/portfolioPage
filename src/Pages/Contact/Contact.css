@@ -1,0 +1,27 @@
+.imgCOntact{
+    width: 396px;
+    height: 127px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+.textStyle{
+    
+    margin-left: 50px;
+    
+}
+
+
+.imgPhone{
+    display: flex;
+    margin-top: 0px;
+    /* width: 292px;
+    height: 277px; */
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
