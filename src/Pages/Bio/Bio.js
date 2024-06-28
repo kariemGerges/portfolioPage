@@ -1,5 +1,4 @@
 import React from "react";
-import PdfDownloader from "../../components/PdfDownloader/PdfDownloader"
 import './Bio.css';
 
 const Bio = ()  => {
@@ -8,7 +7,7 @@ const Bio = ()  => {
   
         <div className="mx-auto justify-center flex">
             
-            <div className=" max-w-7xl">
+            <div className="p-8 m-8">
             <h1 className="text-3xl font-bold  mb-4">About Me</h1>
             <p className=" mb-4">
                 Hello! I'm Kariem Gerges, a passionate Software Engineer with a keen eye for detail and a passion for creating dynamic, responsive web applications. With a strong background in computer and information technology, and a Bachelor of Science degree in Web & Software Development from the Purdue School of Engineering and Technology at IUPUI, I bring both technical expertise and creative flair to my projects.

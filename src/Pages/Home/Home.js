@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import logo from '../../assets/fulllogo.png';
 const Home = () => {
     
     return (

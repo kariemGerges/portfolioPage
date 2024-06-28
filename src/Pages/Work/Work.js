@@ -6,7 +6,6 @@ import stateQuiz from '../../assets/StatesQuiz.png';
 import stockSavvy from '../../assets/StockMe.png';
 import donationPal from '../../assets/donationPal.png';
 import travia from '../../assets/travia.png';
-import PdfDownloader from "../../components/PdfDownloader/PdfDownloader";
 
 const Work = () =>{
     const [expandedCards, setExpandedCards] = useState(false);

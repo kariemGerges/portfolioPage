@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import img1 from '../../assets/P1.jpg';
 import img2 from '../../assets/portLight.jpg';
-import PdfDownloader from "../../components/PdfDownloader/PdfDownloader";
 import Contact from "../Contact/Contact";
 import Bio from "../Bio/Bio";
 import Home from "../Home/Home";
@@ -30,7 +29,7 @@ const KariemPortfolio = () => {
             <Home />
             <Bio />
 
-        <div className="container mx-auto"> 
+        <div className="container mx-auto">
             <Contact />
         </div>
         </div>

@@ -8,7 +8,7 @@ const From = ({ onSearch }) => {
     const [Message, setMessage] = useState("");
     const [triggerSend, setTrigger] = useState(false);
 
-    const { data, loading, error } = useEmailSender(triggerSend ? FirstName : null, triggerSend ? LastName : null, triggerSend ? Email : null, triggerSend ? Message : null);
+    const { data, loading } = useEmailSender(triggerSend ? FirstName : null, triggerSend ? LastName : null, triggerSend ? Email : null, triggerSend ? Message : null);
 
 
     const handleSubmit = (event) => {
