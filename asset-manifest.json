@@ -1,27 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolioPage/static/css/main.7e200eaf.chunk.css",
-    "main.js": "/portfolioPage/static/js/main.14ea327e.chunk.js",
-    "main.js.map": "/portfolioPage/static/js/main.14ea327e.chunk.js.map",
-    "runtime~main.js": "/portfolioPage/static/js/runtime~main.786acfc3.js",
-    "runtime~main.js.map": "/portfolioPage/static/js/runtime~main.786acfc3.js.map",
-    "static/js/2.bc2f54a8.chunk.js": "/portfolioPage/static/js/2.bc2f54a8.chunk.js",
-    "static/js/2.bc2f54a8.chunk.js.map": "/portfolioPage/static/js/2.bc2f54a8.chunk.js.map",
-    "static/js/3.75735a85.chunk.js": "/portfolioPage/static/js/3.75735a85.chunk.js",
-    "static/js/3.75735a85.chunk.js.map": "/portfolioPage/static/js/3.75735a85.chunk.js.map",
+    "main.css": "/portfolioPage/static/css/main.7b91e3a8.css",
+    "main.js": "/portfolioPage/static/js/main.91ad2fe5.js",
+    "static/js/453.ace21015.chunk.js": "/portfolioPage/static/js/453.ace21015.chunk.js",
+    "static/media/Guide Me.png": "/portfolioPage/static/media/Guide Me.ff5d435b6b8ddf44bacc.png",
+    "static/media/StockMe.png": "/portfolioPage/static/media/StockMe.03e56635c24d07d3efec.png",
+    "static/media/contact.png": "/portfolioPage/static/media/contact.3c36013d8eb968619b67.png",
+    "static/media/donationPal.png": "/portfolioPage/static/media/donationPal.d0c50d4e740a92bc3428.png",
+    "static/media/StatesQuiz.png": "/portfolioPage/static/media/StatesQuiz.4bc19ae479d32635cca6.png",
+    "static/media/contact me phone2.png": "/portfolioPage/static/media/contact me phone2.a1c05d416f8727bbdc2c.png",
+    "static/media/portLight.jpg": "/portfolioPage/static/media/portLight.8cdbf6d71cbd3595e8c5.jpg",
+    "static/media/P1.jpg": "/portfolioPage/static/media/P1.4504e17b828d875dfdec.jpg",
+    "static/media/travia.png": "/portfolioPage/static/media/travia.e1a26818fa76ff6a6727.png",
+    "static/media/the code designer logo.png": "/portfolioPage/static/media/the code designer logo.db482ce176670bb573a6.png",
     "index.html": "/portfolioPage/index.html",
-    "precache-manifest.7b86509ffabba2a79196754b955c1955.js": "/portfolioPage/precache-manifest.7b86509ffabba2a79196754b955c1955.js",
-    "service-worker.js": "/portfolioPage/service-worker.js",
-    "static/css/main.7e200eaf.chunk.css.map": "/portfolioPage/static/css/main.7e200eaf.chunk.css.map",
-    "static/media/Guide Me.png": "/portfolioPage/static/media/Guide Me.74f126b8.png",
-    "static/media/P1.jpg": "/portfolioPage/static/media/P1.26b0781c.jpg",
-    "static/media/StatesQuiz.png": "/portfolioPage/static/media/StatesQuiz.77d4ea76.png",
-    "static/media/StockMe.png": "/portfolioPage/static/media/StockMe.8055d8c6.png",
-    "static/media/contact me phone2.png": "/portfolioPage/static/media/contact me phone2.d3852667.png",
-    "static/media/contact.png": "/portfolioPage/static/media/contact.d1214ffe.png",
-    "static/media/donationPal.png": "/portfolioPage/static/media/donationPal.b1abe2f0.png",
-    "static/media/portLight.jpg": "/portfolioPage/static/media/portLight.c474e55a.jpg",
-    "static/media/the code designer logo.png": "/portfolioPage/static/media/the code designer logo.91d7b975.png",
-    "static/media/travia.png": "/portfolioPage/static/media/travia.0089105c.png"
-  }
+    "main.7b91e3a8.css.map": "/portfolioPage/static/css/main.7b91e3a8.css.map",
+    "main.91ad2fe5.js.map": "/portfolioPage/static/js/main.91ad2fe5.js.map",
+    "453.ace21015.chunk.js.map": "/portfolioPage/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b91e3a8.css",
+    "static/js/main.91ad2fe5.js"
+  ]
 }
