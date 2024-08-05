@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolioPage/static/css/main.655a41a2.css",
-    "main.js": "/portfolioPage/static/js/main.7c99f155.js",
+    "main.js": "/portfolioPage/static/js/main.905ae756.js",
     "static/js/453.ace21015.chunk.js": "/portfolioPage/static/js/453.ace21015.chunk.js",
     "static/media/Guide Me.png": "/portfolioPage/static/media/Guide Me.ff5d435b6b8ddf44bacc.png",
     "static/media/StockMe.png": "/portfolioPage/static/media/StockMe.03e56635c24d07d3efec.png",
@@ -11,16 +11,16 @@
     "static/media/contact me phone2.png": "/portfolioPage/static/media/contact me phone2.a1c05d416f8727bbdc2c.png",
     "static/media/portLight.jpg": "/portfolioPage/static/media/portLight.8cdbf6d71cbd3595e8c5.jpg",
     "static/media/P1.jpg": "/portfolioPage/static/media/P1.4504e17b828d875dfdec.jpg",
+    "static/media/Kariem_Gerges_Resmue.pdf": "/portfolioPage/static/media/Kariem_Gerges_Resmue.2d036f386726a0f3d4b4.pdf",
     "static/media/travia.png": "/portfolioPage/static/media/travia.e1a26818fa76ff6a6727.png",
     "static/media/the code designer logo.png": "/portfolioPage/static/media/the code designer logo.db482ce176670bb573a6.png",
     "index.html": "/portfolioPage/index.html",
-    "static/media/getFetch.cjs": "/portfolioPage/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "main.655a41a2.css.map": "/portfolioPage/static/css/main.655a41a2.css.map",
-    "main.7c99f155.js.map": "/portfolioPage/static/js/main.7c99f155.js.map",
+    "main.905ae756.js.map": "/portfolioPage/static/js/main.905ae756.js.map",
     "453.ace21015.chunk.js.map": "/portfolioPage/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.655a41a2.css",
-    "static/js/main.7c99f155.js"
+    "static/js/main.905ae756.js"
   ]
 }
