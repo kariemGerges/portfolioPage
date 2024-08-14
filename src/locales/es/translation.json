@@ -1,0 +1,55 @@
+﻿{
+    "home": {
+      "hello": "Hola mundo...!!! Mi nombre es",
+      "name": "Kariem Gerges",
+      "title": "Y construyo cosas para la web.",
+      "description": "Soy un ingeniero de software construyendo un Mundo Digital Mejor, Una Línea de Código a la Vez. Empoderando Negocios con Soluciones Innovadoras y Tecnologías de Vanguardia para Transformar Ideas en Realidad y Elevar Experiencias Digitales."
+    },
+    "bio": {
+      "about_me": "Sobre Mí",
+      "paragraph1": "¡Hola! Soy Kariem Gerges, un apasionado Ingeniero de Software con un gran ojo para el detalle y una pasión por crear aplicaciones web dinámicas y receptivas. Con una sólida formación en tecnología informática y de la información, y una licenciatura en Desarrollo Web y de Software de la Escuela de Ingeniería y Tecnología Purdue en IUPUI, aporto tanto experiencia técnica como creatividad a mis proyectos.",
+      "paragraph2": "Durante los últimos años, he perfeccionado mis habilidades en varios aspectos del desarrollo web, desde el diseño del front-end hasta la programación del back-end. Soy competente en HTML, CSS, JavaScript, React, Node.js y Express, y siempre estoy ansioso por aprender nuevas tecnologías y marcos para mantenerme a la vanguardia en esta industria de rápido movimiento.",
+      "paragraph3": "Actualmente trabajo en Meijer en operaciones de tiendas minoristas, pero estoy buscando activamente oportunidades para pasar al lado corporativo del negocio. Mi objetivo es aprovechar mis habilidades técnicas y experiencia para contribuir a proyectos innovadores y ayudar a las empresas a alcanzar sus objetivos de transformación digital.",
+      "paragraph4": "Además de mis actividades profesionales, soy un padre dedicado a mis hijos, Elijah e Iziah. En mi tiempo libre, disfruto explorando nuevas tecnologías, jugando al baloncesto (¡Steph Curry es mi jugador favorito!) y pasando tiempo de calidad con mi familia.",
+      "paragraph5": "Gracias por visitar mi sitio web. Siéntase libre de explorar mis proyectos y ponerse en contacto si tiene alguna pregunta o oportunidad de colaboración. ¡Creemos algo increíble juntos!"
+    },
+    "contact": {
+      "contact_info": "Contáctame",
+      "share_thoughts": "Comparte tus pensamientos conmigo.",
+      "first_name": "Nombre",
+      "last_name": "Apellido",
+      "email_address": "Correo electrónico",
+      "message": "Mensaje",
+      "type_message": "Escriba su mensaje aquí...",
+      "get_in_touch": "Ponte en contacto conmigo...",
+      "sending": "Enviando...",
+      "send": "Enviar"
+    },
+    "resume": {
+      "name": "Kariem H. Gerges",
+      "location": "Westfield IN",
+      "phone": "(317) 438-3142",
+      "email": "kariem.gerges@outlook.com",
+      "portfolio": "Mi Portafolio",
+      "objective": "Objetivo",
+      "objective_text": "Ansioso por aprovechar mis extensas habilidades en desarrollo de sistemas y programación, especialmente en desarrollo de software con metodologías ágiles, para impulsar soluciones tecnológicas impactantes. Siempre estoy dispuesto a aprender nuevas tecnologías rápidamente para mantenerme actualizado. Mi objetivo es utilizar mi experiencia en liderar equipos multifuncionales para fomentar estrategias innovadoras y contribuir significativamente al crecimiento y eficiencia empresarial.",
+      "education": "Educación",
+      "education_list": [
+        "Licenciatura en Ciencias en Tecnología de la Información y Computación: Desarrollo Web y de Software, Escuela de Ingeniería y Tecnología Purdue en IUPUI. GPA 3.9.",
+        "Asociado en Informática TSAP, Ivy Tech College, IN GPA 3.85.",
+        "Licenciatura en Ciencias en Administración de Empresas, Universidad de El Cairo, Egipto.",
+        "Licenciatura en Ciencias en Contabilidad, Universidad de Alejandría, Egipto."
+      ],
+      "skills": "Habilidades",
+      "professional": "Profesional",
+      "technical": "Técnico",
+      "experience": "Experiencia",
+      "projects": "Proyectos"
+    },
+    "work": {
+      "title": "Título",
+      "description": "Descripción",
+      "more_details": "Más Detalles"
+    }
+  }
+  

@@ -1,11 +1,12 @@
 import React from "react";
+import resume from "../../Style/Kariem_Gerges_Resmue.pdf";
 const PdfDownloader = () => {
 
     return (
         <div>
 
             <a 
-                href="/Kariem_Gerges_Resume.pdf" 
+                href={resume} 
                 download="Kariem_Gerges_Resume.pdf"
                 className="nav-link px-2 hover:text-white navLinks"
                 target="_blank"

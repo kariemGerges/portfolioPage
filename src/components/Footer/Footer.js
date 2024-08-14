@@ -32,12 +32,9 @@ const Footer = () => {
                         <img src={logo} className ="img" alt="logo The Code Designer" />
                     </div>
                         <ul className="nav justify-content-center m-auto">
-                            <Link to="/" className="nav-link px-2 hover:text-white navLinks" id="navLinks">
-                    Portfolio
-                            </Link>
-                            <Link to="/work" className="nav-link px-2 hover:text-white navLinks" id="navLinks">
-                                My Work
-                            </Link>
+                            <Link to="/" className="nav-link px-2 hover:text-white navLinks" id="navLinks">Portfolio</Link>
+                                <Link to="/blogPage" className="nav-link px-2 hover:text-white navLinks" id="navLinks">Blog</Link> 
+                            <Link to="/work" className="nav-link px-2 hover:text-white navLinks" id="navLinks">My Work</Link>
                             <li><a href= "https://github.iu.edu/kgerges"
                         target="_blank"
                         rel="noopener noreferrer"

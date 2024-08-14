@@ -18,13 +18,31 @@ const Resume = () =>
                 ||
                 <a href="mailto:kariem.gerges@outlook.com" className="text-red-500 hover:text-red-700 hover:underline m-2">kariem.gerges@outlook.com</a>
                 ||
-                <a href="https://kariemgerges.github.io/Portfolio" className="text-red-500 hover:text-red-700 hover:underline m-2">My Portfolio</a>
+                <a href="https://kariemgerges.github.io/portfolioPage" 
+                    target="_blank" rel="noopener noreferrer" 
+                    className="text-red-500 hover:text-red-700 hover:underline m-2"
+                    >
+                        My Portfolio
+                    </a>
                 </p>
         </header>
     
     <section className="bg-white shadow p-6 mt-6 w-full max-w-4xl rounded-lg">
         <h2 className="text-2xl font-semibold mb-4">Objective</h2>
         <p>Eager to leverage my extensive skills in systems development and programming, especially in software development with Agile methodologies, to drive impactful technology solutions. I am always keen to learn new technologies quickly to stay current. I aim to utilize my experience in leading cross-functional teams to foster innovative strategies and contribute significantly to business growth and efficiency.</p>
+    </section>
+
+    <section className="bg-white shadow p-6 mt-6 w-full max-w-4xl rounded-lg">
+        <h2 className="text-2xl font-semibold mb-4">Education</h2>
+        <div className="mb-4">
+            <ul className="list-disc list-inside">
+                <li>Bachelor of Science in Computer and Information Technology: Web & Software Development,
+                    Purdue School of Engineering and Technology, IUPUI. GPA 3.9.</li>
+                <li>Associate in informatics TSAP, Ivy Tech College, IN GPA 3.85.</li>
+                <li>Bachelor of Science in Business Administration, Cairo University, Egypt.</li>
+                <li>Bachelor of Science in Accounting, Alexandria University, Egypt.</li>
+            </ul>
+        </div>
     </section>
     
     <section className="bg-white shadow p-6 mt-6 w-full max-w-4xl rounded-lg">

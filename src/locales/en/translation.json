@@ -1,0 +1,58 @@
+{
+  "home": {
+    "hello": "Hello world...!!! My name is",
+    "name": "Kariem Gerges",
+    "title": "And I build things for the web.",
+    "description": "I am a software engineer building a Better Digital World,",
+    "description1":"One Line of Code at a Time. Empowering Businesses with Innovative",
+    "description2":"Solutions and Cutting-Edge Technologies to Transform Ideas into",
+    "description3":"Reality and Elevate Digital Experiences."
+  },
+  "bio": {
+    "about_me": "About Me",
+    "paragraph1": "I'm a passionate Software Engineer with a keen eye for detail and a passion for creating dynamic, responsive web applications. With a strong background in computer and information technology, and a Bachelor of Science degree in Web & Software Development from the Purdue School of Engineering and Technology at IUPUI, I bring both technical expertise and creative flair to my projects.",
+    "paragraph2": "Over the past several years, I have honed my skills in various aspects of web development, from front-end design to back-end programming. I am proficient in HTML, CSS, JavaScript, React, Node.js, and Express, and I am always eager to learn new technologies and frameworks to stay ahead in this fast-paced industry.",
+    "paragraph3": "I currently work at Meijer in retail store operations, but I am actively seeking opportunities to transition to the corporate side of the business. My goal is to leverage my technical skills and experience to contribute to innovative projects and help businesses achieve their digital transformation goals.",
+    "paragraph4": "In addition to my professional pursuits, I am a dedicated father to my kids, Elijah and Iziah. In my free time, I enjoy exploring new technologies, playing basketball (Steph Curry is my favorite player!), and spending quality time with my family.",
+    "paragraph5": "Thank you for visiting my website. Feel free to explore my projects and reach out if you have any questions or opportunities for collaboration. Let's create something amazing together!"
+  },
+  "contact": {
+    "contact_info": "Contact Me",
+    "share_thoughts": "Share Your Thoughts",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email_address": "Email Address",
+    "message": "Message",
+    "type_message": "Type Your Message Here...",
+    "get_in_touch": "Get In Touch",
+    "sending": "Sending...",
+    "send": "Send"
+  },
+  "resume": {
+    "name": "Kariem H. Gerges",
+    "location": "Westfield, IN",
+    "phone": "(317) 438-3142",
+    "email": "kariem.gerges@outlook.com",
+    "portfolio": "My Portfolio",
+    "objective": "Objective",
+    "objective_text": "Eager to leverage my extensive skills in systems development and programming, especially in software development with Agile methodologies, to drive impactful technology solutions. I am always keen to learn new technologies quickly to stay current. I aim to utilize my experience in leading cross-functional teams to foster innovative strategies and contribute significantly to business growth and efficiency.",
+    "education": "Education",
+    "education_list": [
+      "Bachelor of Science in Computer and Information Technology: Web & Software Development, Purdue School of Engineering and Technology, IUPUI. GPA 3.9.",
+      "Associate in Informatics: TSAP, Ivy Tech College, IN. GPA 3.85.",
+      "Bachelor of Science in Business Administration, Cairo University, Egypt.",
+      "Bachelor of Science in Accounting, Alexandria University, Egypt."
+    ],
+    "skills": "Skills",
+    "professional": "Professional",
+    "technical": "Technical",
+    "experience": "Experience",
+    "projects": "Projects"
+  },
+  "work": {
+    "title": "Title",
+    "description": "Description",
+    "more_details": "More Details"
+  }
+}
+

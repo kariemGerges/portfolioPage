@@ -36,10 +36,28 @@
       font-size: 1.2rem;
     }
     #humburgerMenu{
-      color: var(--navText-color);
+      color: var(--dText-color);
+      background-color: var(--cText-color);
       &:hover{
         color: var(--navHoverText-color);
       }
+    }
+    #card-img{
+      
+      height: 250px;
+      &:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+        z-index: 1;
+        opacity: 1;
+        filter: blur(0.5px);
+        -webkit-filter: blur(0.5px);
+        -moz-filter: blur(0.5px);
+        -o-filter: blur(0.5px);
+        -ms-filter: blur(0.5px);
+        -khtml-filter: blur(0.5px);
+      }
+      
     }
 
   }
