@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolioPage/static/css/main.c7fd665e.css",
-    "main.js": "/portfolioPage/static/js/main.9968b67b.js",
+    "main.js": "/portfolioPage/static/js/main.ddd852e5.js",
     "static/js/453.ace21015.chunk.js": "/portfolioPage/static/js/453.ace21015.chunk.js",
     "static/media/Guide Me.png": "/portfolioPage/static/media/Guide Me.ff5d435b6b8ddf44bacc.png",
     "static/media/StockMe.png": "/portfolioPage/static/media/StockMe.03e56635c24d07d3efec.png",
@@ -16,11 +16,11 @@
     "static/media/the code designer logo.png": "/portfolioPage/static/media/the code designer logo.db482ce176670bb573a6.png",
     "index.html": "/portfolioPage/index.html",
     "main.c7fd665e.css.map": "/portfolioPage/static/css/main.c7fd665e.css.map",
-    "main.9968b67b.js.map": "/portfolioPage/static/js/main.9968b67b.js.map",
+    "main.ddd852e5.js.map": "/portfolioPage/static/js/main.ddd852e5.js.map",
     "453.ace21015.chunk.js.map": "/portfolioPage/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7fd665e.css",
-    "static/js/main.9968b67b.js"
+    "static/js/main.ddd852e5.js"
   ]
 }
