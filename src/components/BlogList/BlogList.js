@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useBlogFetcher from '../../Hooks/useBlogFetcher'
 import BlogHeader from "../BlogHeader/BlogHeader";
+import { Loader2, MoveRight  } from 'lucide-react';
 import Loading from "../Loading/Loading";
 
 const BlogList = () => {
@@ -35,85 +36,100 @@ const BlogList = () => {
           <BlogHeader />
         </div>        
         {/* Main Content */}
-        <main className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Hero Section that displays the most recent article */}
-          <section className="lg:col-span-2">
-          {loading && <p>It's coming<Loading /></p>}
-          {error && <p>{error}</p>}
-              { mostRecentArticle[0] && (
-                <div className="relative  p-8 rounded-lg shadow-lg overflow-hidden">
-                  <h1 className="text-3xl font-bold mb-4">{mostRecentArticle[0].title}</h1>
-                    <img
-                      src={mostRecentArticle[0].image}
-                      alt={mostRecentArticle[0].title}
-                      className="w-full h-64 object-cover mb-6"
-                    />
-                    <p className="text-sm mb-6">{mostRecentArticle[0].body.introduction} </p>
-                  <p className="text-sm mb-6">{handleDate(mostRecentArticle[0].date)}</p>
-                  <Link to="/BlogPostDetails" state = {{ singleBlog: mostRecentArticle[0] }}>
-                    <button 
-                      className="rounded-md bg-yellow-400 px-3 py-2 text-sm font-semibold text-blue-950 shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                      >
-                      Read article ➡️
-                    </button>
-                  </Link>
-                </div>
-              )}
-
-            {/* Secondary Articles */}
-              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-
-                {/* Article 1 */}
-                <Link to="/BlogPostDetails" state={{ singleBlog: mostRecentArticle[1] }}>
-                  { mostRecentArticle[1] && (
-                    <div className=" p-4 rounded-lg shadow">
-                      <h2 className="text-lg font-bold mt-2">
-                        {mostRecentArticle[1].title}
-                      </h2>
-                      <p className="text-sm">{handleDate(mostRecentArticle[1].date)}</p>
+        { loading && (
+          <div className="text-3xl font-bold mt-4">
+            <h1 className="inline-flex items-center">
+              It's c 
+              <Loader2 className="animate-spin text-[#960019] h-7 w-7 mx-1" />
+              ming
+            </h1>
+            <Loading type="bars" color="#960019" height={100} width={100} />
+          </div>
+        )}
+          <main className="mt-3 grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Hero Section that displays the most recent article */}
+            <section className="lg:col-span-2">
+            {error && <p>{error}</p>}
+                { mostRecentArticle[0] && (
+                  <div className="relative p-6 rounded-lg shadow-lg overflow-hidden">
+                    <h2 className="text-3xl font-bold mb-4">{mostRecentArticle[0].title}</h2>
+                      <img
+                        src={mostRecentArticle[0].image}
+                        alt={mostRecentArticle[0].title}
+                        className="w-full h-64 object-cover mb-6"
+                      />
+                      <p className="text-sm mb-6">{mostRecentArticle[0].body.introduction} </p>
+                    <p className="text-sm mb-6">{handleDate(mostRecentArticle[0].date)}</p>
+                    <Link to="/BlogPostDetails" state = {{ singleBlog: mostRecentArticle[0] }}>
+                    <div className="flex">
+                      <MoveRight 
+                        className="animate-bounce mr-3 mt-2"
+                        />
+                          <button 
+                            className="rounded-md bg-yellow-400 px-3 py-2 text-sm font-semibold 
+                            text-blue-950 shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2
+                            focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        >
+                          Read article
+                      </button>
                     </div>
-                  )}
-                </Link>
-
-
-                {/* Article 2 */}
-                <Link to="/BlogPostDetails" state={{ singleBlog: mostRecentArticle[2] }}>
-                  { mostRecentArticle[2] && (
-                    <div className=" p-4 rounded-lg shadow">
-                      <h2 className="text-lg font-bold mt-2">
-                        {mostRecentArticle[2].title}
-                      </h2>
-                      <p className="text-sm">{handleDate(mostRecentArticle[2].date)}</p>
-
-                    </div>
-                  )}
-                </Link>            
-              </div>
-            
-
-          </section>
-  
-          {/* Sidebar Section that shows all articles */}
-          <aside className="lg:block">
-            <div className="p-6 rounded-lg shadow overflow-y-auto" style={{ maxHeight: '500px' }}>
-              <div><h2 className="text-xl font-bold mb-4">All Articles</h2></div>
-              {/* Recommended Article 1 */}
-              { blogData && blogData.map((blog, index) => (
-                <Link to='/BlogPostDetails' state = {{ singleBlog: blog }}>
-                  <hr className="my-2 border-gray-700" />
-                  <div className="mb-4">
-                    <h3 className="font-bold text-gray-800">
-                      {blog.title}
-                    </h3>
-                    <p className="text-sm mt-1">{handleDate(blog.date)}</p>
+                    </Link>
                   </div>
-                  <hr className="my-2 border-gray-700" />
-                </Link>
-              ))}
-            </div>
-          </aside>
-          
-        </main>
+                )}
+
+              {/* Secondary Articles */}
+                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                  {/* Article 1 */}
+                  <Link to="/BlogPostDetails" state={{ singleBlog: mostRecentArticle[1] }}>
+                    { mostRecentArticle[1] && (
+                      <div className=" p-4 rounded-lg shadow">
+                        <h2 className="text-lg font-bold mt-2">
+                          {mostRecentArticle[1].title}
+                        </h2>
+                        <p className="text-sm">{handleDate(mostRecentArticle[1].date)}</p>
+                      </div>
+                    )}
+                  </Link>
+
+
+                  {/* Article 2 */}
+                  <Link to="/BlogPostDetails" state={{ singleBlog: mostRecentArticle[2] }}>
+                    { mostRecentArticle[2] && (
+                      <div className=" p-4 rounded-lg shadow">
+                        <h2 className="text-lg font-bold mt-2">
+                          {mostRecentArticle[2].title}
+                        </h2>
+                        <p className="text-sm">{handleDate(mostRecentArticle[2].date)}</p>
+
+                      </div>
+                    )}
+                  </Link>            
+                </div>
+
+            </section>
+    
+            {/* Sidebar Section that shows all articles */}
+            <aside className="lg:block">
+              <div className="p-6  rounded-lg shadow overflow-y-auto border" style={{ maxHeight: '600px' }} id="custom-shadow">
+                <div><h2 className="text-xl font-bold mb-4" id="navLinks">All Articles</h2></div>
+                {/* Recommended Article 1 */}
+                { blogData && blogData.map((blog, index) => (
+                  <Link to='/BlogPostDetails' state = {{ singleBlog: blog }}>
+                    <hr className="my-2 border-white-700" />
+                    <div className="mb-4">
+                      <h3 className="font-bold">
+                        {blog.title}
+                      </h3>
+                      <p className="text-sm mt-1">{handleDate(blog.date)}</p>
+                    </div>
+                    <hr className="my-2 border-white-700" />
+                  </Link>
+                ))}
+              </div>
+            </aside>
+            
+          </main>
         
       </div>
     );

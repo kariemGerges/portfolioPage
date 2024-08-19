@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import BlogHeader from "../BlogHeader/BlogHeader";
 import { Link, useLocation } from 'react-router-dom';
 import './BlogPostDetails.css';
-import { ChevronDown, ChevronUp, Twitter, Facebook, Linkedin } from 'lucide-react';
+import { ChevronDown, ChevronUp, UserRoundPen , Github , Linkedin } from 'lucide-react';
+import Likes from "../Likes/Likes";
 
 
 const ArticleSection = () => {
@@ -95,9 +96,12 @@ const BlogPostDetails = () => {
                             <nav className="bg-white rounded-lg shadow-md p-6 mb-8 sticky top-24">
                             <h2 className="text-xl font-bold mb-4 text-blue-600">Table of Contents</h2>
                             <ul className="space-y-2">
-                                {['Introduction', 'Concurrent Rendering', 'Automatic Batching', 'Suspense Enhancements', 'New Hooks', 'Server Components', 'Challenges and Considerations', 'Conclusion'].map((item, index) => (
+                                {['Introduction',  'Conclusion'].map((item, index) => (
                                 <li key={index}>
-                                    <a href={`#${item.toLowerCase().replace(/ /g, '-')}`} className="text-blue-500 hover:text-blue-700 transition-colors">
+                                    <a href={`#${item.toLowerCase().replace(/ /g, '-')}`} 
+                                        className="text-blue-500 hover:text-blue-700 transition-colors"
+                                        id="navLinks"
+                                        >  
                                     {item}
                                     </a>
                                 </li>
@@ -106,18 +110,25 @@ const BlogPostDetails = () => {
                             </nav>
                         </aside>
                         )}
-                        
-                        <main className="w-full md:w-3/4">
+                    {/* {Main Content } */}
+                    <main className="w-full md:w-3/4">
                         <article className="bg-white rounded-lg shadow-md p-6 mb-8">
                             <img
-                            src={singleBlog.image}
-                            alt="React 18 Update"
-                            className="w-full h-64 object-cover rounded-lg shadow-md mb-8 transition-transform hover:scale-105"
+                                src={singleBlog.image}
+                                alt="React 18 Update"
+                                className="w-full h-64 object-cover rounded-lg shadow-md mb-8 transition-transform hover:scale-105"
                             />
                             <div className="flex items-center mb-6 animate-fade-in">
-                            <div>
-                                <h2 className="text-xl font-bold">{singleBlog.author}</h2>
-                                <p className="text-gray-600">{handleDate(singleBlog.date)}</p>
+                                <div>
+                                    <h2 className="text-xl font-bold">{singleBlog.author}</h2>
+                                    <p className="text-gray-600">{handleDate(singleBlog.date)}</p>
+                                </div>
+                            <div
+                                id="navLinks" 
+                                className="flex justify-end ml-auto transition-colors transform hover:scale-110"
+                                >
+                                    < Likes />
+                                    {/* <span className="ml-2">{singleBlog && (singleBlog.likes).length }</span> */}
                             </div>
                             </div>
                             
@@ -134,14 +145,36 @@ const BlogPostDetails = () => {
                             </section>
 
                             <div className="mt-8 flex justify-center space-x-4 animate-fade-in">
-                            <a href="#" className="text-blue-500 hover:text-blue-700 transition-colors transform hover:scale-110">
-                                <Twitter size={32} />
+                            <a href="https://www.behance.net/kariemgerges?log_shim_removal=1" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                id="navLinks" 
+                                className="text-blue-500 hover:text-blue-700 transition-colors transform hover:scale-110">
+                                <UserRoundPen 
+                                    size={40} 
+                                    strokeWidth={1.5} 
+                                    />
                             </a>
-                            <a href="#" className="text-blue-500 hover:text-blue-700 transition-colors transform hover:scale-110">
-                                <Facebook size={32} />
+                            <a 
+                                href="https://github.com/kariemGerges" 
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                id="navLinks" 
+                                className="text-blue-500 hover:text-blue-700 transition-colors transform hover:scale-110">
+                                <Github  
+                                    size={40} 
+                                    strokeWidth={1.5} 
+                                    />
                             </a>
-                            <a href="#" className="text-blue-500 hover:text-blue-700 transition-colors transform hover:scale-110">
-                                <Linkedin size={32} />
+                            <a 
+                                href="https://www.linkedin.com/in/kariem-gerges-458294195/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                id="navLinks" className="text-blue-500 hover:text-blue-700 transition-colors transform hover:scale-110">
+                                <Linkedin 
+                                    size={40} 
+                                    strokeWidth={1.5} 
+                                    />
                             </a>
                             </div>
                         </article>

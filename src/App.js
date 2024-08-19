@@ -10,6 +10,8 @@ import KariemPortfolio from './Pages/KariemPortfolio/portfolioPage';
 import ProjectDetails from './Pages/ProjectDetails/ProjectDetails';
 import BlogPage from './Pages/BlogPage/BlogPage';
 import BlogPostDetails from './components/BlogPostDetails/BlogPostDetails';
+import Homev2 from './Pages/Homev2/Homev2';
+import LoginPage from './Pages/LoginPage/LoginPage';
 
 // import Components 
 import Header from './components/Header/Header';
@@ -23,11 +25,13 @@ function App() {
         <Header />
           <div className=''>
             <Routes>
+              <Route path='/homev2' element={<Homev2 />} />
               <Route path="/" element={<KariemPortfolio />} />
                 <Route path='/portfolioPage' element={<KariemPortfolio />} />
                   <Route path="/bio" element={<Bio />} />
                     <Route path="/work" element={<Work />} />
                       <Route path='/blogPage' element={<BlogPage />} />
+                        <Route path='/LoginPage' element={<LoginPage />} />
                     <Route path='/BlogPostDetails' element={<BlogPostDetails />} />
                   <Route path='/ProjectDetails' element={<ProjectDetails />} />
                 <Route path="/contact" element={<Contact />} />

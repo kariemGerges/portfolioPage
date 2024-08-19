@@ -59,7 +59,6 @@
       }
       
     }
-
   }
 
   /* dark theme */
@@ -91,10 +90,16 @@
         color: var(--navHoverText-color);
       }
     }
+    #custom-shadow {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                  0 2px 4px -1px rgba(255, 0, 0, 0.4); /* Red shadow */
+    }
   }
   
   body {
     background-color: var(--background-color);
+    /* background-image: url('../assets/bg-pattren09.jpg'); */
+    background-size: cover;
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
   }

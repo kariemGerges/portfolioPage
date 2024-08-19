@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 const ProjectDetails = () => {
 
     const location = useLocation();
-    const { card } = location.state || {};
+    const { selectedCard } = location.state || {};
 
     return (
         <div className=" p-10 w-full mx-auto flex justify-between items-center">
@@ -12,10 +12,10 @@ const ProjectDetails = () => {
                 <div 
                     className="rounded overflow-hidden shadow-lg">
                         <div className="font-bold text-xl mb-2 text-center p-2">
-                            {card.title}
+                            {selectedCard.title}
                         </div>
                         <div className="px-6 pt-4 pb-2">
-                            <div dangerouslySetInnerHTML={{ __html: card.description }} />
+                            <div dangerouslySetInnerHTML={{ __html: selectedCard.description }} />
                         </div>
                 </div>
             </div>
