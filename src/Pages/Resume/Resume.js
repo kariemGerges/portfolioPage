@@ -5,8 +5,7 @@ const Resume = () =>
     return (
         <div className="text-gray-900 leading-relaxed tracking-wide flex flex-col items-center ">
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            </div>
-         
+            </div>         
         <header className="bg-white shadow p-6 mt-6 w-full max-w-4xl rounded-lg">
             <h1 className="text-3xl font-bold mb-3 text-center">
                 Kariem H. Gerges

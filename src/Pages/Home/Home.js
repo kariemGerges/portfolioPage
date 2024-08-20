@@ -1,44 +1,11 @@
 import React from 'react';
 import './Home.css';
 import { useTranslation } from 'react-i18next';
-import AnimatedText from '../../components/AnimatedText/AnimatedText';
-import { motion, useInView } from 'framer-motion';
 import { Code, Database, Server, Smartphone } from 'lucide-react';
-
-const AnimatedIcon = ({ icon: Icon, delay }) => {
-    const ref = React.useRef(null);
-    const isInView = useInView(ref, { once: false, amount: 0.5 });
-
-    return (
-        <motion.div
-            ref={ref}
-            initial={{ scale: 0, rotate: -180 }}
-            animate={isInView ? { scale: 1, rotate: 0 } : { scale: 0, rotate: -180 }}
-            transition={{ type: 'spring', stiffness: 260, damping: 20, delay }}
-        >
-            <Icon className="w-12 h-12 text-purple-600" />
-        </motion.div>
-    );
-};
-
-const AnimatedCard = ({ children, delay }) => {
-    const ref = React.useRef(null);
-    const isInView = useInView(ref, { once: false, amount: 0.5 });
-
-    return (
-        <motion.div
-            ref={ref}
-            className="bg-white bg-opacity-10 p-8 rounded-lg backdrop-blur-md shadow-lg"
-            initial={{ opacity: 0, y: 50 }}
-            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-            transition={{ duration: 0.5, delay }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-        >
-            {children}
-        </motion.div>
-    );
-};
+// 
+import TextAnimation from '../../components/Animations/TextAnimation';
+import AnimatedCard from '../../components/Animations/CardAnimation/CardAnimation';
+import AnimatedIcon from '../../components/Animations/IconAnimation/IconAnimation';
 
 const Home = () => {
     const { t } = useTranslation();
@@ -47,7 +14,7 @@ const Home = () => {
         <div className="flex flex-col min-h-screen lg:flex-row">
             <div className='w-full lg:w-1/2 p-8 sm:p-8 lg:p-12 flex flex-col justify-center'>
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl mb-4" id='hello'>{t('home.hello')}</h1>
-                <h2 className="text-4xl sm:text-6xl lg:text-8xl font-semibold mb-4" id='name'><AnimatedText text={t('home.name')} /></h2>
+                <h2 className="text-4xl sm:text-6xl lg:text-8xl font-semibold mb-4" id='name'><TextAnimation text={t('home.name')} /></h2>
                 <h3 className="text-3xl sm:text-4xl lg:text-5xl font-medium mb-4" id='title'>{t('home.title')}</h3>
                 <p className="text-sm sm:text-base lg:text-lg leading-relaxed" id='description'>
                     {t('home.description')}<br />

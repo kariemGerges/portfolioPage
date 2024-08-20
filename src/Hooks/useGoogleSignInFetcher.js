@@ -1,4 +1,5 @@
 import { useState } from "react";
+import config from "../Config";
 
 const useGoogleSignInFetcher = () => {
     const [loading, setLoading] = useState(false);
@@ -13,7 +14,8 @@ const useGoogleSignInFetcher = () => {
                 if (response.ok) {
                     window.location.href = url;
                 } else {
-                    window.location.href = "http://localhost:3001/errorPage"; // client side
+                    window.location.href = "https://kariemgerges.github.io/portfolioPage/#/ErrLandingPage"; // client side
+                    // window.location.href = `${config.apiUrl}/ErrLandingPage`; // server side
                 }
             })
     };
@@ -22,7 +24,8 @@ const useGoogleSignInFetcher = () => {
         setLoading(true);
         setError(null);
         try{
-            checkIfServerError("http://localhost:3000/api/v1/auth/google");
+            checkIfServerError("https://kariemportfolio-backend.onrender.com/api/v1/auth/google");
+            // checkIfServerError(`${config.apiUrl}/api/v1/auth/google`);
         }
         catch(error){
             setError(error);

@@ -1,6 +1,9 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import {useInView} from 'framer-motion';
 
 const AnimatedText = ({ text }) => {
+    const ref = React.useRef(null);
+    const isInView = useInView(ref, { once: false, amount: 0.5 });
     const [currentText, setCurrentText] = useState('');
     const [currentIndex, setCurrentIndex] = useState(0);
   
@@ -14,7 +17,7 @@ const AnimatedText = ({ text }) => {
       }
     }, [currentIndex, text]);
   
-    return <span>{currentText}</span>;
+    return <span>{isInView ? currentText : currentText}</span>;
   };
 
   export default AnimatedText;

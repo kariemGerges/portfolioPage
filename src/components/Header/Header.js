@@ -4,6 +4,7 @@ import './Header.css';
 import ThemeToggleBtn from "../ThemeToggleBtn/ThemeToggleBtn";
 import Translation from "../Translation/Translation";
 // import btnLogo from '../../assets/btn1.png';
+import config from "../../Config";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +43,11 @@ const Header = () => {
                     </button>
                    
             </div> */}
-
+                    {config.apiUrl.includes('localhost') && (
+                        <div style={{background: 'red', color: 'white', padding: '5px'}}>
+                            Local Development Mode : {config.apiUrl}
+                        </div>
+                    )}  
 
 
                 <div className="md:hidden fixed bottom-4 right-4">

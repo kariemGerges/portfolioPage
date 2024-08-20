@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 // import Pages
 import Bio from './Pages/Bio/Bio';
 import Resume from './Pages/Resume/Resume';
@@ -10,8 +10,9 @@ import KariemPortfolio from './Pages/KariemPortfolio/portfolioPage';
 import ProjectDetails from './Pages/ProjectDetails/ProjectDetails';
 import BlogPage from './Pages/BlogPage/BlogPage';
 import BlogPostDetails from './components/BlogPostDetails/BlogPostDetails';
-import Homev2 from './Pages/Homev2/Homev2';
+import ErrLandingPage from './Pages/ErrLandingPage/ErrLandingPage';
 import LoginPage from './Pages/LoginPage/LoginPage';
+import ComponentTester from './Pages/ComponentTester/ComponentTester';
 
 // import Components 
 import Header from './components/Header/Header';
@@ -23,14 +24,16 @@ function App() {
   return (
       <Router>
         <Header />
+        {/* <ComponentTester /> */}
           <div className=''>
             <Routes>
-              <Route path='/homev2' element={<Homev2 />} />
-              <Route path="/" element={<KariemPortfolio />} />
-                <Route path='/portfolioPage' element={<KariemPortfolio />} />
-                  <Route path="/bio" element={<Bio />} />
-                    <Route path="/work" element={<Work />} />
-                      <Route path='/blogPage' element={<BlogPage />} />
+              <Route path='/ErrLandingPage' element={<ErrLandingPage />} />
+                <Route path="/" element={<KariemPortfolio />} />
+                  <Route path='/portfolioPage' element={<KariemPortfolio />} />
+                    <Route path="/bio" element={<Bio />} />
+                      <Route path="/work" element={<Work />} />
+                        <Route path='/blogPage' element={<BlogPage />} />
+                          <Route path='/test' element={<ComponentTester />} />
                         <Route path='/LoginPage' element={<LoginPage />} />
                     <Route path='/BlogPostDetails' element={<BlogPostDetails />} />
                   <Route path='/ProjectDetails' element={<ProjectDetails />} />

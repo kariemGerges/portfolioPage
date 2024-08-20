@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Newspaper, BookOpen, Cpu, Menu, LogIn } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import AnimatedText from '../AnimatedText/AnimatedText';
+import Animations from '../Animations/TextAnimation';
 
 const BlogHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ const BlogHeader = () => {
           <div className="flex items-center space-x-2 " id="navLinks">
             <Cpu className="w-8 h-8 animate-pulse" />
               <h1 className="text-2xl font-bold" >
-                  <AnimatedText text="Kariem's Blog"  />
+                  <Animations text="Kariem's Blog"  />
               </h1>
           </div>
         </Link>

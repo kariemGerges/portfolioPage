@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import config from "../Config";
 
 const useBlogFetcher = () => {
     const [loading, setLoading] = useState(false);
@@ -20,6 +21,9 @@ const useBlogFetcher = () => {
                     setLoading(false);
                 } else {
                     // Fetch data from API if not cached
+                    // const response = await axios.get(`${config.apiUrl}/api/v1/posts`);
+                    console.log(`${config.apiUrl}/api/v1/posts testing the config api url`); 
+                    // both api calls prod and dev
                     const response = await axios.get('https://kariemportfolio-backend.onrender.com/api/v1/posts');
                     // const response = await axios.get('http://localhost:3000/api/v1/posts');
 

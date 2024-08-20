@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import config from "../Config";
 
 
 const useEmailSender = (FirstName, LastName, Email, Message) => {
@@ -22,7 +23,11 @@ const useEmailSender = (FirstName, LastName, Email, Message) => {
             };
             setLoading(true);
             try {
+                // const response = await axios.post(`${config.apiUrl}/api/v1/sendNew`, data);
+                // both api calls prod and dev
                 const response = await axios.post("https://kariemportfolio-backend.onrender.com/api/v1/sendNew", data);
+                // const response = await axios.post("http://localhost:3000/api/v1/sendNew", data);
+
                 if (response.status === 200) {
                     setLoading(false);
                     setError(null);
