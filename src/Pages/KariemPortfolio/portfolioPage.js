@@ -17,7 +17,7 @@ const KariemPortfolio = () => {
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
-      };
+        };
     
 
     return (
@@ -28,7 +28,7 @@ const KariemPortfolio = () => {
             </div>
 
             <Home />
-            <AnimatedCard delay={0.1}><Bio /></AnimatedCard>
+            <Bio />
 
             <div className="container mx-auto">
                 <Contact />
