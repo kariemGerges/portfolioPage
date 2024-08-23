@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolioPage/static/css/main.5c83d3ab.css",
-    "main.js": "/portfolioPage/static/js/main.e8d159b1.js",
+    "main.css": "/portfolioPage/static/css/main.68ca7b34.css",
+    "main.js": "/portfolioPage/static/js/main.40db8f79.js",
     "static/js/453.1407b060.chunk.js": "/portfolioPage/static/js/453.1407b060.chunk.js",
     "static/media/Guide Me.png": "/portfolioPage/static/media/Guide Me.ff5d435b6b8ddf44bacc.png",
     "static/media/StockMe.png": "/portfolioPage/static/media/StockMe.03e56635c24d07d3efec.png",
@@ -17,12 +17,12 @@
     "static/media/travia.png": "/portfolioPage/static/media/travia.e1a26818fa76ff6a6727.png",
     "static/media/the code designer logo.png": "/portfolioPage/static/media/the code designer logo.db482ce176670bb573a6.png",
     "index.html": "/portfolioPage/index.html",
-    "main.5c83d3ab.css.map": "/portfolioPage/static/css/main.5c83d3ab.css.map",
-    "main.e8d159b1.js.map": "/portfolioPage/static/js/main.e8d159b1.js.map",
+    "main.68ca7b34.css.map": "/portfolioPage/static/css/main.68ca7b34.css.map",
+    "main.40db8f79.js.map": "/portfolioPage/static/js/main.40db8f79.js.map",
     "453.1407b060.chunk.js.map": "/portfolioPage/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c83d3ab.css",
-    "static/js/main.e8d159b1.js"
+    "static/css/main.68ca7b34.css",
+    "static/js/main.40db8f79.js"
   ]
 }
