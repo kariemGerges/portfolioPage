@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-// import { useTranslation  } from "react-i18next";
 import i18n from "i18next";
+import { Languages } from 'lucide-react';
+
 
 
 const Translation = () => {
@@ -16,14 +17,12 @@ const Translation = () => {
     const changeLanguageTo = (lng) => {
         i18n.changeLanguage(lng);
         setIsMenuOpen(false);
-        console.log(`Language changed to teez ${lng}`);
-
     };
 
 
     return (
-        <div className="relative">
-            <div>
+        <div className="">
+            <div className="mb-4">
                 <button 
                         type="button" 
                         onClick={toggleMenu} 
@@ -31,10 +30,7 @@ const Translation = () => {
                         aria-expanded={isMenuOpen} 
                         aria-haspopup="true"
                     >
-                        Translate
-                    {/* <svg className="-mr-1 ml-5 h-4 w-9 " viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                    </svg> */}
+                    <Languages />
                 </button>
             </div>
 

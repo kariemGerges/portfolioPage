@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <footer className="footer mt-auto py-2">
 
-            <div class="grid grid-cols-3 gap-4">
+            {/* <div class="grid grid-cols-3 gap-4"> */}
 
                 <div class="">
 
@@ -79,7 +79,7 @@ const Footer = () => {
                     </ul> */}
                 </div>
                     
-            </div>
+            {/* </div> */}
 
         </footer>
     );

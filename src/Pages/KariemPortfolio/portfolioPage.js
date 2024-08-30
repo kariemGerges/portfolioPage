@@ -7,8 +7,6 @@ import Home from "../Home/Home";
 import './KariemPortfolio.css';
 import ThemeContext from "../../components/ThemeContext/ThemeContext";
 import { useTranslation  } from "react-i18next";
-import AnimatedCard from "../../components/Animations/CardAnimation/CardAnimation";
-
 
 const KariemPortfolio = () => {
 
@@ -17,23 +15,37 @@ const KariemPortfolio = () => {
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
-        };
+      };
     
 
     return (
-            
-        <div className="justify-center items-center bg-opacity-800">          
-            <div>
-                {theme === 'light' ? <img src={img2} id="img2" className="" alt="kariem portfolio"/> : <img src={img1} id="img1" className="" alt="kariem portfolio"/>}
-            </div>
 
-            <Home />
-            <Bio />
+        <div className="min-h-screen flex flex-col">
+          <div className="">
+            <div className="max-w-screen-xl mx-auto space-y-8 sm:space-y-12 lg:space-y-16">
 
-            <div className="container mx-auto">
+              <div className="w-full">
+                {theme ? (
+                  <img src={img1} id="img2" alt="kariem portfolio" className="w-full h-auto rounded-lg shadow-lg" />
+                ) : (
+                  <img src={img2} id="img1" alt="kariem portfolio" className="w-full h-auto rounded-lg shadow-lg" />
+                )}
+              </div>
+    
+              <div className="w-full">
+                <Home />
+              </div>
+    
+              <div className="w-full">
+                <Bio />
+              </div>
+    
+              <div className="w-full">
                 <Contact />
+              </div>
             </div>
-        </div>
+          </div>
+      </div>
     );
 }
 

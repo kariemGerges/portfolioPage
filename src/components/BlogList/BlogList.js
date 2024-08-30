@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import useBlogFetcher from '../../Hooks/useBlogFetcher'
 import BlogHeader from "../BlogHeader/BlogHeader";
 import { Loader2, MoveRight  } from 'lucide-react';
 import Loading from "../Loading/Loading";
+import ThemeContext from "../ThemeContext/ThemeContext";
 
 const BlogList = () => {
 
     const { blogData, loading, error } = useBlogFetcher();
     const [scrolled, setScrolled] = useState(false);
+    const { theme } = useContext(ThemeContext);
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,17 +25,23 @@ const BlogList = () => {
     }, []);
 
     // helper functions
+
+    // date handler
     const handleDate = (time) => {
         const date = new Date(time);
         return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
     };
 
+    // most recent article
     const mostRecentArticle = blogData.sort((a, b)=> new Date(b.date) - new Date(a.date));
 
     return (
       <div className="min-h-screen p-4 mt-4">
-        <div className={` bg-white shadow-md sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'py-1' : ''}`}>
+        <div className={`${theme ? 'bg-gray-800' : 'bg-yellow-200'} 
+                rounded-lg shadow-md sticky top-0 z-50 transition-all 
+                duration-300 ${scrolled ? 'py-3' : ''}`}
+        >
           <BlogHeader />
         </div>        
         {/* Main Content */}
@@ -52,7 +61,7 @@ const BlogList = () => {
             {error && <p>{error}</p>}
                 { mostRecentArticle[0] && (
                   <div className="relative p-6 rounded-lg shadow-lg overflow-hidden">
-                    <h2 className="text-3xl font-bold mb-4">{mostRecentArticle[0].title}</h2>
+                    <h2 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-3xl mb-4 ">{mostRecentArticle[0].title}</h2>
                       <img
                         src={mostRecentArticle[0].image}
                         alt={mostRecentArticle[0].title}
@@ -78,12 +87,12 @@ const BlogList = () => {
                 )}
 
               {/* Secondary Articles */}
-                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="mt-6 border grid grid-cols-1 md:grid-cols-2 gap-4">
 
                   {/* Article 1 */}
                   <Link to="/BlogPostDetails" state={{ singleBlog: mostRecentArticle[1] }}>
                     { mostRecentArticle[1] && (
-                      <div className=" p-4 rounded-lg shadow">
+                      <div className="border-r-2 p-4 shadow">
                         <h2 className="text-lg font-bold mt-2">
                           {mostRecentArticle[1].title}
                         </h2>
@@ -96,7 +105,7 @@ const BlogList = () => {
                   {/* Article 2 */}
                   <Link to="/BlogPostDetails" state={{ singleBlog: mostRecentArticle[2] }}>
                     { mostRecentArticle[2] && (
-                      <div className=" p-4 rounded-lg shadow">
+                      <div className="p-4 shadow">
                         <h2 className="text-lg font-bold mt-2">
                           {mostRecentArticle[2].title}
                         </h2>

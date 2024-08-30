@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import BlogHeader from "../BlogHeader/BlogHeader";
 import { Link, useLocation } from 'react-router-dom';
 import './BlogPostDetails.css';
 import { ChevronDown, ChevronUp, UserRoundPen , Github , Linkedin } from 'lucide-react';
 import Likes from "../Likes/Likes";
+import ThemeContext from "../ThemeContext/ThemeContext";
 
 
 const ArticleSection = () => {
@@ -55,6 +56,8 @@ const BlogPostDetails = () => {
     const [toc, setToc] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
+    const { theme } = useContext(ThemeContext);
+
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 50);
@@ -76,9 +79,14 @@ const BlogPostDetails = () => {
             <BlogHeader />
             { singleBlog && (
                 <div>
-                    <header className={`bg-white shadow-md sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'py-3' : ''}`}>
+                    <header 
+                            className={`${theme ? 'bg-gray-800' : 'bg-yellow-200'} 
+                            rounded-lg shadow-md sticky top-0 z-50 transition-all 
+                            duration-300 ${scrolled ? 'py-3' : ''}`}
+                    >
                         <div className="container mx-auto px-4 flex justify-between items-center">
-                        <h1 className={`text-3xl md:text-4xl font-bold transition-all duration-300 ${scrolled ? 'text-2xl md:text-3xl' : ''}`}>{singleBlog.title}</h1>
+                        <h1 className={`text-3xl md:text-4xl text-center font-bold transition-all duration-300 ${scrolled ? 'text-2xl md:text-3xl' : ''}`}>{singleBlog.title}</h1>
+
                         <button
                             onClick={() => setToc(!toc)}
                             className="md:hidden bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors"
@@ -91,6 +99,7 @@ const BlogPostDetails = () => {
 
                     {/* smaller screen toc that has navigation */}
                     <div className="container mx-auto px-4 py-8 flex flex-wrap md:flex-nowrap">
+
                         {toc && (
                         <aside className="w-full md:w-1/4 md:pr-8 animate-fade-in">
                             <nav className="bg-white rounded-lg shadow-md p-6 mb-8 sticky top-24">
@@ -109,13 +118,14 @@ const BlogPostDetails = () => {
                             </ul>
                             </nav>
                         </aside>
+
                         )}
                     {/* {Main Content } */}
                     <main className="w-full md:w-3/4">
-                        <article className="bg-white rounded-lg shadow-md p-6 mb-8">
+                        <article className={`rounded-lg shadow-md p-6 mb-8 ${theme ? 'bg-gray-800' : 'bg-white shadow-lg'}`}>
                             <img
                                 src={singleBlog.image}
-                                alt="React 18 Update"
+                                alt={singleBlog.title}
                                 className="w-full h-64 object-cover rounded-lg shadow-md mb-8 transition-transform hover:scale-105"
                             />
                             <div className="flex items-center mb-6 animate-fade-in">
@@ -139,7 +149,7 @@ const BlogPostDetails = () => {
                             
                             <ArticleSection />
 
-                            <section id="conclusion" className="bg-yellow-100 p-6 rounded-lg animate-fade-in">
+                            <section id="conclusion" className=" p-6 rounded-lg animate-fade-in">
                                 <h2 className="text-2xl font-bold mb-4 text-blue-600">Conclusion</h2>
                                 <p>{singleBlog.body.conclusion.content}</p>
                             </section>

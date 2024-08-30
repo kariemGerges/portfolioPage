@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../Style/Kariem_Gerges_Resmue.pdf";
+import resume from "../../Style/Kariem_Gerges_Resume.pdf";
 const PdfDownloader = () => {
 
     return (

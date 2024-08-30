@@ -1,93 +1,197 @@
 import React, { useState, useEffect } from 'react';
-import { Code, User, Briefcase, Mail, Star, Cpu, Coffee, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Star, Code, GraduationCap, Users, Trophy , Sun, Moon } from 'lucide-react';
 
-const EyeCatchingDevSidebar = () => {
-  const [activeSection, setActiveSection] = useState('about');
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isOpen, setIsOpen] = useState(true);
-
-  const menuItems = [
-    { id: 'about', icon: User, label: 'About Me', color: 'text-yellow-400' },
-    { id: 'projects', icon: Briefcase, label: 'Projects', color: 'text-green-400' },
-    { id: 'skills', icon: Code, label: 'Skills', color: 'text-blue-400' },
-    { id: 'contact', icon: Mail, label: 'Contact', color: 'text-purple-400' },
-  ];
+const SpaceBioComponent = () => {
+  const [activeSection, setActiveSection] = useState(null);
+  const [stars, setStars] = useState([]);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
+    const generateStars = () => {
+      return Array.from({ length: 50 }, () => ({
+        left: `${Math.random() * 100}%`,
+        top: `${Math.random() * 100}%`,
+        animationDuration: `${Math.random() * 3 + 1}s`,
+      }));
     };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    setStars(generateStars());
   }, []);
 
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
+  const sections = [
+    {
+      title: 'Software Engineer',
+      icon: <Code className="w-8 h-8" />,
+      content: "Passionate about creating dynamic, responsive web applications. Proficient in HTML, CSS, JavaScript, React, Node.js, and Express.",
+    },
+    {
+      title: 'Education',
+      icon: <GraduationCap className="w-8 h-8" />,
+      content: "Bachelor of Science in Web & Software Development from Purdue School of Engineering and Technology at IUPUI.",
+    },
+    {
+      title: 'Personal',
+      icon: <Users className="w-8 h-8" />,
+      content: "Dedicated father to Elijah and Iziah. Currently working at Meijer in retail store operations, seeking opportunities to transition to the corporate side.",
+    },
+    {
+      title: 'Hobbies',
+      icon: <Trophy  className="w-8 h-8" />,
+      content: "Exploring new technologies, playing baseball  (Steph Curry fan!), and spending quality time with family.",
+    },
+  ];
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
   };
 
   return (
-    <div className={`fixed inset-y-0 left-0 transition-all duration-300 ease-in-out ${isOpen ? 'w-64' : 'w-16'}`}>
-      <div className="h-full bg-gray-900 text-white overflow-hidden relative">
-        <div 
-          className="absolute inset-0 opacity-10 transition-opacity duration-300"
+    <div className={` p-8 transition-colors duration-300`}>
+      {/* {isDarkMode && stars.map((star, index) => (
+        <Star
+          key={index}
+          className="absolute text-yellow-200 animate-pulse"
           style={{
-            opacity: isOpen ? 0.1 : 0,
-            backgroundImage: `radial-gradient(
-              circle at ${mousePosition.x}px ${mousePosition.y}px,
-              rgba(255,255,255,0.3) 0%,
-              rgba(255,255,255,0) 50%
-            )`
+            left: star.left,
+            top: star.top,
+            animationDuration: star.animationDuration,
           }}
+          size={Math.random() * 4 + 2}
         />
+      ))} */}
+      
+      <div className="relative z-10 max-w-4xl mx-auto">
+        
+        <div className="flex justify-between items-center mb-8">
+          <h1 className="text-4xl font-bold">Exploring My Universe</h1>
 
-        <div className="h-full flex flex-col justify-between p-6">
-          <div>
-            <h1 className={`text-3xl font-bold mb-8 text-center transition-all duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 h-0 mb-0'}`}>
-              <span className="text-blue-400">&lt;</span>
-              Web Dev
-              <span className="text-blue-400">/&gt;</span>
-            </h1>
+          {/* <button
+            onClick={toggleTheme}
+            className={`p-2 rounded-full ${isDarkMode ? 'bg-yellow-400 text-gray-900' : 'bg-gray-700 text-white'} transition-colors duration-300`}
+          >
+            {isDarkMode ? <Sun size={24} /> : <Moon size={24} />}
+          </button> */}
 
-            <nav>
-              {menuItems.map((item) => (
-                <a
-                  key={item.id}
-                  href={`#${item.id}`}
-                  className={`group flex items-center p-3 mb-4 rounded-lg transition-all duration-300 ${
-                    activeSection === item.id ? 'bg-gray-800' : 'hover:bg-gray-800'
-                  } ${isOpen ? '' : 'justify-center'}`}
-                  onClick={() => setActiveSection(item.id)}
-                >
-                  <item.icon size={24} className={`${item.color} ${isOpen ? 'mr-3' : ''}`} />
-                  <span className={`relative transition-all duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 w-0'}`}>
-                    {item.label}
-                    <span className={`absolute left-0 -bottom-1 w-0 h-0.5 ${item.color} transition-all duration-300 group-hover:w-full`}></span>
-                  </span>
-                </a>
-              ))}
-            </nav>
-          </div>
-
-          <div className={`mt-auto transition-all duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}>
-            <div className="flex justify-center space-x-4 mb-4">
-              <Star className="text-yellow-400 animate-spin-slow" size={20} />
-              <Cpu className="text-green-400 animate-pulse" size={20} />
-              <Coffee className="text-red-400 animate-bounce" size={20} />
-            </div>
-            <p className="text-sm text-center text-gray-400">Crafting digital experiences with passion and precision</p>
-          </div>
         </div>
+        
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          {sections.map((section, index) => (
+            <div
+              key={index}
+              className={`bg-gray-800 shadow-md hover:shadow-lg  rounded-lg p-4 cursor-pointer transform transition-all duration-300 hover:scale-105 
+                ${activeSection === index ? 'ring-2 ring-blue-400' : ''}`}
+                onClick={() => setActiveSection(index)}
+            >
+              <div className={`flex items-center justify-center mb-2`}>
+                {section.icon}
+              </div>
+              <h2 className="text-xl font-semibold text-center">{section.title}</h2>
+            </div>
+          ))}
+        </div>
+        
+        <div className='bg-gray-800 shadow-md rounded-lg p-6 min-h-[200px] flex items-center justify-center transition-colors duration-300'>
+          {activeSection !== null ? (
+            <p className="text-lg text-center">{sections[activeSection].content}</p>
+          ) : (
+            <p className="text-lg text-center">Click on a planet to explore more about me!</p>
+          )}
+        </div>
+        
+        {/* <div className="mt-8 text-center">
+          <p className="text-lg mb-4">
+            Ready to embark on an interstellar project together?
+          </p>
+          <button className={`${isDarkMode ? 'bg-blue-500 hover:bg-blue-600' : 'bg-blue-600 hover:bg-blue-700'} text-white font-bold py-2 px-6 rounded-full transition-colors duration-300 transform hover:scale-105`}>
+            Launch Collaboration
+          </button>
+        </div> */}
 
-        <button
-          onClick={toggleSidebar}
-          className="absolute top-1/2 -right-3 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-1 shadow-lg hover:bg-gray-700 transition-colors duration-200"
-        >
-          {isOpen ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
-        </button>
       </div>
     </div>
   );
 };
 
-export default EyeCatchingDevSidebar;
+export default SpaceBioComponent;
+
+
+
+// import React, { useState, useContext } from 'react';
+// import ThemeContext  from './../../components/ThemeContext/ThemeContext';
+// import { Sun, Moon, Menu, X, Home, User, Mail, Rocket } from 'lucide-react';
+
+// const SpaceHeader = () => {
+//   const { theme } = useContext(ThemeContext);
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+//   const navItems = [
+//     { name: 'Home', icon: Home },
+//     { name: 'About', icon: User },
+//     { name: 'Contact', icon: Mail },
+//     { name: 'Projects', icon: Rocket },
+//   ];
+
+//   return (
+//     <header className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${theme ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+//       <div className="container mx-auto px-4">
+//         <div className="flex justify-between items-center py-4">
+//           <div className="flex items-center space-x-2">
+//             <Rocket className={`w-8 h-8 ${theme ? 'text-blue-400' : 'text-blue-600'}`} />
+//             <span className="text-2xl font-bold">Space Dev</span>
+//           </div>
+          
+//           <nav className="hidden md:flex space-x-6">
+//             {navItems.map((item) => (
+//               <a 
+//                 key={item.name} 
+//                 href={`#${item.name.toLowerCase()}`} 
+//                 className={`flex items-center space-x-1 hover:${theme ? 'text-blue-400' : 'text-blue-600'} transition-colors duration-200`}
+//               >
+//                 <item.icon className="w-5 h-5" />
+//                 <span>{item.name}</span>
+//               </a>
+//             ))}
+//           </nav>
+          
+//           <div className="flex items-center space-x-4">
+//             <button
+//               // onClick={toggleTheme}
+//               className={`p-2 rounded-full ${theme ? 'bg-yellow-400 text-gray-900' : 'bg-gray-200 text-gray-600'} transition-colors duration-200`}
+//               aria-label="Toggle theme"
+//             >
+//               {theme ? <Sun size={20} /> : <Moon size={20} />}
+//             </button>
+            
+//             <button
+//               className="md:hidden"
+//               onClick={() => setIsMenuOpen(!isMenuOpen)}
+//               aria-label="Toggle menu"
+//             >
+//               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+      
+//       {/* Mobile menu */}
+//       {isMenuOpen && (
+//         <div className={`md:hidden ${theme ? 'bg-gray-800' : 'bg-gray-100'}`}>
+//           {navItems.map((item) => (
+//             <a
+//               key={item.name}
+//               href={`#${item.name.toLowerCase()}`}
+//               className={`block py-2 px-4 ${theme ? 'hover:bg-gray-700' : 'hover:bg-gray-200'} transition-colors duration-200`}
+//               onClick={() => setIsMenuOpen(false)}
+//             >
+//               <div className="flex items-center space-x-2">
+//                 <item.icon className="w-5 h-5" />
+//                 <span>{item.name}</span>
+//               </div>
+//             </a>
+//           ))}
+//         </div>
+//       )}
+//     </header>
+//   );
+// };
+
+// export default SpaceHeader;
