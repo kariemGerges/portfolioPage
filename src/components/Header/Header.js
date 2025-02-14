@@ -34,15 +34,6 @@ const Header = () => {
                     < Translation />
                 </div>
         </div>
-
-            {/* <div className=" md:hidden flex flex-col" id="humburgerMenu">
-                    <button onClick={toggleMenu} className=" focus:outline-none">
-                        <svg className="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-            
-            </div> */}
                     {config.apiUrl.includes('localhost') && (
                         <div className="text-red-500">
                             Dev Mode : {config.apiUrl}

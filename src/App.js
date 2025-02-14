@@ -15,7 +15,6 @@ import ErrLandingPage from './Pages/ErrLandingPage/ErrLandingPage';
 import LoginPage from './Pages/LoginPage/LoginPage';
 import ComponentTester from './Pages/ComponentTester/ComponentTester';
 
-
 // import Components 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -23,6 +22,8 @@ import ThemeContext  from './components/ThemeContext/ThemeContext';
 
 import './App.css';
 import './i18n'
+
+
 
 function App() {
   const { theme } = useContext(ThemeContext);

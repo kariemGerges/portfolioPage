@@ -1,31 +1,3 @@
-// import React from "react";
-// import { useLocation } from 'react-router-dom';
-
-// const ProjectDetails = () => {
-
-//     const location = useLocation();
-//     const { selectedCard } = location.state || {};
-
-//     return (
-//         <div className=" p-10 w-full mx-auto flex justify-between items-center">
-//             <div className="grid grid-cols-1 m-12">
-//                 <div 
-//                     className="rounded overflow-hidden shadow-lg">
-//                         <div className="font-bold text-xl mb-2 text-center p-2">
-//                             {selectedCard.title}
-//                         </div>
-//                         <div className="px-6 pt-4 pb-2">
-//                             <div dangerouslySetInnerHTML={{ __html: selectedCard.description }} />
-//                         </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-
-// export default ProjectDetails;
-
 import React, { useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -59,9 +31,9 @@ const ProjectDetails = () => {
         <div className="bg-gray-900 text-gray-300 min-h-screen p-4 font-mono">
             <div className="max-w-4xl mx-auto">
 
-                <Link to="/work" className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-6">
-                    <ArrowLeft className="mr-2" />
-                    <button className="text-blue-400 hover:text-blue-300">Back to Projects</button>
+                <Link to="/work" className="flex items-center mb-4 text-gray-300 hover:text-gray-200 transition">
+                    
+                    
                 </Link>
                 
                 <motion.div 
