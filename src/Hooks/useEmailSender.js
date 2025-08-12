@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import config from "../Config";
 
 
 const useEmailSender = (FirstName, LastName, Email, Message) => {

@@ -6,8 +6,10 @@ import guideMeImg from "../../assets/Guide Me.png";
 import stateQuiz from "../../assets/StatesQuiz.png";
 import stockSavvy from "../../assets/StockMe.png";
 import donationPal from "../../assets/donationPal.png";
-import groStoreImage from "../../assets/travia.png";
+import eCommerce from "../../assets/e-commerce.png";
 import travia from "../../assets/travia.png";
+import adminDashboard from "../../assets/adminDashborad.png"
+import TeachMe from "../../assets/teachme1.png";
 
 const Work = () => {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -84,17 +86,42 @@ const Work = () => {
     },
     {
       id: 6,
-      title: "Gro-Store",
-      image: groStoreImage,
-      alt: "Gro-Store",
-      webSite: "https://yourwebsite.com/gro-store",
+      title: "E-Commerce",
+      image: eCommerce,
+      alt: "E-Commerce",
+      webSite: "https://ecommerce-frontend-henna-two.vercel.app/",
       prevDescription:
-        "<div><h1>Gro-Store: Smart Grocery Management</h1><p>Gro-Store is a comprehensive application designed to simplify grocery management. With features like smart inventory tracking, shopping list creation, and AI-powered recommendations, Gro-Store ensures an efficient shopping experience.</p><h2>Technology Stack:</h2><ul><li><strong>Frontend:</strong> React.js</li><li><strong>Backend:</strong> Node.js, Express</li><li><strong>Database:</strong> Firebase</li></ul></div>",
+        "<div><h1>FreshMart: E-Commerce Platform</h1><p>The FreshMart project is a dynamic digital platform that transforms the grocery shopping experience. It combines a user‑friendly interface with robust inventory management and secure e‑commerce features to connect consumers with a curated selection of local and international grocery items, ensuring convenience and efficiency in every transaction.</p></div>",
       description:
-        "<section><header><h1>Gro-Store</h1><p>An innovative platform to streamline grocery shopping and inventory management, powered by AI-driven recommendations.</p></header><article><p>The platform allows users to create personalized shopping lists, track pantry items, and receive smart suggestions based on usage and preferences.</p><section><h2>Key Features</h2><ul><li><strong>Smart Inventory Tracking:</strong> Monitor and manage pantry items effortlessly.</li><li><strong>Shopping List Creation:</strong> Generate and organize lists with ease.</li><li><strong>AI-Powered Recommendations:</strong> Personalized suggestions for efficient shopping.</li><li><strong>Real-Time Sync:</strong> Access and update data across multiple devices.</li><li><strong>User Authentication:</strong> Secure login for a personalized experience.</li></ul></section><section><h2>Technology Stack</h2><ul><li><strong>Backend:</strong> Node.js and Express for seamless server-side operations.</li><li><strong>Frontend:</strong> React.js for a responsive and interactive user experience.</li><li><strong>Database:</strong> Firebase for real-time data synchronization and storage.</li></ul></section><section><h2>Role and Contributions</h2><ul><li><strong>Full-Stack Development:</strong> Built both frontend and backend features.</li><li><strong>Database Integration:</strong> Implemented Firebase for data storage and synchronization.</li><li><strong>AI Integration:</strong> Developed AI-driven algorithms for personalized recommendations.</li><li><strong>User Experience Design:</strong> Created a user-friendly interface with focus on simplicity and usability.</li></ul></section><footer><h2>Summary</h2><p>Gro-Store showcases my expertise in modern web development and AI integration, delivering a practical and innovative solution for everyday grocery management.</p></footer></article></section>",
+        "<section><header><h1>FreshMart: E-Commerce Platform</h1></header><p>The Gro‑Store project is an innovative online marketplace designed to modernize how groceries are bought and sold. Its key objectives and features include: User Experience: A responsive, intuitive interface optimized for both desktop and mobile devices that simplifies product discovery and purchase. E‑Commerce Integration: Secure payment gateways, streamlined checkout processes, and real‑time inventory management ensure smooth, reliable transactions. Advanced Functionality: Powerful search and filtering tools help users quickly locate products, while personalized recommendations driven by data analytics enhance the shopping journey.</p></section>",
       frontend: ["React.js"],
-      backend: ["Node.js", "Express"],
-      database: ["Firebase"],
+      backend: ["Node.js"],
+      database: ["MongoDB, MySQL"],
+    },
+    {
+      id: 7,
+      title: "E-Commerce Admin Dashboard",
+      image: adminDashboard,
+      alt: "E-Commerce Admin Dashboard",
+      webSite: "https://ecommerce-frontend-admindashborad.vercel.app/",
+      prevDescription: "",
+      description: "",
+      frontend: ["React.js"],
+      backend: ["Node.js"],
+      database: ["MongoDB, MySQL"],
+    },
+    {
+      id: 8,
+      title: "TeachMe App",
+      image: TeachMe,
+      alt: "TeachMe App",
+      webSite: "Full Mobile App",
+      prevDescription: "A full mobile app for android and ios",
+      description:
+        "A full mobile app for android and ios, developed using React Native and Firebase. It includes features such as authentication, user registration. An app that helps students from 1st grade to 12th grade to learn and practice their subjects. The app includes features such as video lessons, quizzes, flashcards, and progress tracking. The app is designed to be user-friendly and engaging, with a focus on helping students improve their academic performance.",
+      frontend: ["React Native"],
+      backend: ["Firebase"],
+      database: ["FireStore"],
     },
   ];
 
