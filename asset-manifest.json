@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolioPage/static/css/main.68ca7b34.css",
-    "main.js": "/portfolioPage/static/js/main.50f88870.js",
+    "main.js": "/portfolioPage/static/js/main.91be35e3.js",
     "static/js/453.1407b060.chunk.js": "/portfolioPage/static/js/453.1407b060.chunk.js",
     "static/media/Guide Me.png": "/portfolioPage/static/media/Guide Me.ff5d435b6b8ddf44bacc.png",
     "static/media/StockMe.png": "/portfolioPage/static/media/StockMe.03e56635c24d07d3efec.png",
@@ -9,8 +9,10 @@
     "static/media/donationPal.png": "/portfolioPage/static/media/donationPal.096cca7af7f8fd3983e1.png",
     "static/media/contact.png": "/portfolioPage/static/media/contact.3c36013d8eb968619b67.png",
     "static/media/StatesQuiz.png": "/portfolioPage/static/media/StatesQuiz.4bc19ae479d32635cca6.png",
+    "static/media/adminDashborad.png": "/portfolioPage/static/media/adminDashborad.5566154bcfe745e074ce.png",
     "static/media/login.jpeg": "/portfolioPage/static/media/login.b096ab50b63e0bfd4fdd.jpeg",
     "static/media/contact me phone2.png": "/portfolioPage/static/media/contact me phone2.a1c05d416f8727bbdc2c.png",
+    "static/media/teachme1.png": "/portfolioPage/static/media/teachme1.462ee34265442883cf94.png",
     "static/media/Kariem_Gerges_Resume.pdf": "/portfolioPage/static/media/Kariem_Gerges_Resume.acd6df9cd7048352611f.pdf",
     "static/media/G.jpeg": "/portfolioPage/static/media/G.862a3a7d781c7a2a552d.jpeg",
     "static/media/portLight.jpg": "/portfolioPage/static/media/portLight.ff1c7ea88ca48c587024.jpg",
@@ -19,11 +21,11 @@
     "static/media/the code designer logo.png": "/portfolioPage/static/media/the code designer logo.db482ce176670bb573a6.png",
     "index.html": "/portfolioPage/index.html",
     "main.68ca7b34.css.map": "/portfolioPage/static/css/main.68ca7b34.css.map",
-    "main.50f88870.js.map": "/portfolioPage/static/js/main.50f88870.js.map",
+    "main.91be35e3.js.map": "/portfolioPage/static/js/main.91be35e3.js.map",
     "453.1407b060.chunk.js.map": "/portfolioPage/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68ca7b34.css",
-    "static/js/main.50f88870.js"
+    "static/js/main.91be35e3.js"
   ]
 }
