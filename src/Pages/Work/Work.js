@@ -123,6 +123,19 @@ const Work = () => {
       backend: ["Firebase"],
       database: ["FireStore"],
     },
+    {
+      id: 9,
+      title: "ChatNCook App",
+      image: TeachMe,
+      alt: "TeachMe App",
+      webSite: "Full Mobile App",
+      prevDescription: "A full mobile app for android and ios",
+      description:
+        "A full mobile app for android and ios, developed using React Native and Firebase. It includes features such as authentication, user registration. An app that helps students from 1st grade to 12th grade to learn and practice their subjects. The app includes features such as video lessons, quizzes, flashcards, and progress tracking. The app is designed to be user-friendly and engaging, with a focus on helping students improve their academic performance.",
+      frontend: ["React Native"],
+      backend: ["Firebase"],
+      database: ["FireStore"],
+    },
   ];
 
   return (
