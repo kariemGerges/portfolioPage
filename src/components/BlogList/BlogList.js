@@ -52,7 +52,7 @@ const BlogList = () => {
               <Loader2 className="animate-spin text-[#960019] h-7 w-7 mx-1" />
               ming
             </h1>
-            <Loading type="bars" color="#960019" height={100} width={100} />
+            {/* <Loading type="bars" color="#960019" height={100} width={100} /> */}
           </div>
         )}
           <main className="mt-3 grid grid-cols-1 lg:grid-cols-3 gap-8">
