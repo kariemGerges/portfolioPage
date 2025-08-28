@@ -139,22 +139,23 @@ const Header = () => {
             </div>
 
             {config.apiUrl.includes('localhost') && (
-                <div className="text-red-500">Dev Mode : {config.apiUrl}</div>
+                <div className="text-red-500">Dev Mode</div>
             )}
 
             {/* Mobile Header */}
-            <div className="md:hidden flex justify-between items-center">
+            <div
+                className="md:hidden flex justify-between items-center ">
                 <div className="font-bold text-xl">
                     <Link
                         to="/"
                         className="font-bold text-xl hover:text-yellow-500"
                     >
-                        Portfolio
+                        
                     </Link>
                 </div>
                 <button
                     onClick={toggleMenu}
-                    className="p-3 rounded-md border-2 border-gray-300 dark:border-gray-600 hover:border-yellow-500 dark:hover:border-yellow-500 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                    className="p-3 rounded-md border-gray-300 dark:border-gray-600 hover:border-yellow-500 dark:hover:border-yellow-500 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 >
                     {isMenuOpen ? <X size={20} /> : <PanelsTopLeft  size={20} />}
                 </button>
