@@ -7,7 +7,6 @@ import {
     Globe,
     Database,
     Smartphone,
-    IdCard,
 } from 'lucide-react';
 import ThemeContext from '../../components/ThemeContext/ThemeContext';
 import { Link } from 'react-router-dom';
@@ -223,6 +222,7 @@ const WorkConstellation = () => {
 
     return (
         <div className="min-h-screen lg:mt-4 md:mt-9 sm:p-4 md:p-8 overflow-hidden">
+            
             {/* Animated background stars */}
             <div className="absolute inset-0">
                 {Array.from({ length: 50 }).map((_, i) => (
@@ -262,7 +262,7 @@ const WorkConstellation = () => {
 
             <div
                 ref={containerRef}
-                className="relative h-screen lg:mt-9 md:mt-9 sm:p-2 md:p-8 min-h-screen"
+                className="relative h-screen lg:mt-2 md:mt-9 sm:p-2 md:p-8 min-h-screen"
             >
                 {/* Page title */}
                 <motion.div
@@ -284,10 +284,10 @@ const WorkConstellation = () => {
                     </p>
 
                     <Link
-                        className="text-xl hover:underline hover:text-red-600"
+                        className="text-xl hover:decoration-pink-500 hover:text-red-600"
                         to="/workRView"
                     >
-                        Switch to card view
+                        Switch to card view 🎴
                     </Link>
                 </motion.div>
 
