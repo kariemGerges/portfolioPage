@@ -260,7 +260,10 @@ const WorkConstellation = () => {
                 transition={{ type: 'spring', stiffness: 50, damping: 30 }}
             />
 
-            <div ref={containerRef} className="relative h-screen p-8">
+            <div
+                ref={containerRef}
+                className="relative h-screen lg:mt-9 md:mt-9 sm:p-2 md:p-8 min-h-screen"
+            >
                 {/* Page title */}
                 <motion.div
                     className="text-center mb-12"
@@ -268,15 +271,23 @@ const WorkConstellation = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+                    <h1
+                        className="lg:text-6xl 
+                    font-bold
+                    bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400
+                    bg-clip-text text-transparent mb-4"
+                    >
                         Code Constellation
                     </h1>
-                    <p className="text-xl mb-2 text-gray-300">
+                    <p className="lg:text-xl mb-2 text-gray-300">
                         Navigate through my digital universe
-                    </p> 
-                    
-                    <Link className="text-xl hover:underline hover:text-red-600" to="/workRView">
-                        Switch to card view 
+                    </p>
+
+                    <Link
+                        className="text-xl hover:underline hover:text-red-600"
+                        to="/workRView"
+                    >
+                        Switch to card view
                     </Link>
                 </motion.div>
 

@@ -139,8 +139,8 @@ const Work = () => {
     ];
 
     return (
-        <div className="p-10 min-h-screen">
-            <h1 className="m-12 text-4xl font-bold mb-8 text-center">
+        <div className="lg:mt-9 md:mt-9 sm:p-2 md:p-8 min-h-screen">
+            <h1 className="mt-2 text-4xl font-bold mb-8 text-center">
                 My Work
             </h1>
 
