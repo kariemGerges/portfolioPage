@@ -16,6 +16,7 @@ import {
     ArrowRight,
 } from 'lucide-react';
 import ThemeContext from '../../components/ThemeContext/ThemeContext';
+import PdfDownloader from '../../components/PdfDownloader/PdfDownloader';
 
 import './Resume.css';
 
@@ -148,7 +149,7 @@ export default function KariemResume() {
     return (
         <div
             className="min-h-screen 
-        p-12 lg:mt-9 md:mt-9 sm:p-4 md:p-8"
+            lg:mt-9 md:mt-9 sm:p-4 md:p-8"
         >
             <div
                 className={`max-w-6xl mx-auto transition-all duration-1000 ${
@@ -231,9 +232,21 @@ export default function KariemResume() {
                             </div>
 
                             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-                                <button className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600  px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg text-sm sm:text-base">
+                                <button
+                                    className={`bg-gradient-to-r
+                                ${theme ? `text-white` : `text-black`}
+                                from-cyan-500 to-purple-500 hover:from-cyan-600
+                                hover:to-purple-600  px-4 sm:px-6 py-2 sm:py-3
+                                rounded-full font-semibold flex items-center
+                                justify-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg text-sm sm:text-base`}
+                                >
                                     <Download className="w-3 h-3 sm:w-4 sm:h-4" />
-                                    Download Resume
+
+                                    <PdfDownloader
+                                        className={`${
+                                            theme ? `text-white` : `text-black`
+                                        }`}
+                                    />
                                 </button>
                                 <button className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600  px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg text-sm sm:text-base">
                                     <Github className="w-3 h-3 sm:w-4 sm:h-4" />
