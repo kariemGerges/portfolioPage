@@ -555,7 +555,11 @@ const WorkConstellation = () => {
                                         whileTap={{ scale: 0.95 }}
                                     >
                                         <Code className="w-4 h-4" />
-                                        <span>View Code</span>
+                                        <span>
+                                            <a href={'https://github.com/kariemgerges'} target="_blank" rel="noopener noreferrer" >
+                                                View Code
+                                            </a>
+                                        </span>
                                     </motion.button>
                                 </div>
                             </div>
@@ -565,7 +569,7 @@ const WorkConstellation = () => {
             </AnimatePresence>
 
             {/* Navigation hint */}
-            <motion.div
+            {/* <motion.div
                 className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -574,7 +578,7 @@ const WorkConstellation = () => {
                 <div className="bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 text-white text-sm border border-white/20">
                     Click on any star to explore the project
                 </div>
-            </motion.div>
+            </motion.div> */}
         </div>
     );
 };
